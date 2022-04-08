@@ -1,0 +1,55 @@
+@import "./global";
+.wrapper {
+    font-family: 'Arial';
+    font-weight: 700;
+    width: 40%;
+    height: 67%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 7px 0 rgb(47, 47, 47);
+    padding: 30px 70px 0 70px;
+    box-sizing: border-box;
+    background-image: url(../img/bicycle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top 200px;
+    margin-top: 100px;
+    transition: all 1s ease;
+
+    &:hover {
+        background-position: right -19px top 130px;
+    }
+    
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 10px;
+        
+        &__title {
+            font-size: 16px;
+            font-weight: 700;
+        }
+        
+        & > a {
+            padding: 6px 6px 2px 6px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 1px solid rgba(46, 46, 46, 0.305);
+            transition: all 0.4s ease;
+            
+            &:hover {
+                box-shadow: 0 0 0 3px rgba(123, 123, 123, 0.242);
+            }
+        }
+    }
+    
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        color: #A4A6A6;
+        margin-bottom: 30px;
+    }
+}
+
+@import "./list";

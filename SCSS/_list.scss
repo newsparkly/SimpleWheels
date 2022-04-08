@@ -1,0 +1,30 @@
+.list {
+    list-style-type: none;
+    
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 38px;
+        
+        & > p {
+            display: inline-block;
+            font-size: 19px;
+            color: #5C5E5F;
+        }
+        
+        & > p:nth-child(2) {
+            display: inline-block;
+            font-weight: 600;
+            font-size: 24px;
+            color: #000;
+        }
+        
+    }
+
+    &__item:nth-child(3) > p:nth-child(1) {
+        display: inline-block;
+        font-size: 23px;
+        color: #5C5E5F;
+    }
+}
